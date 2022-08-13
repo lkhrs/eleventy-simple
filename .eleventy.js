@@ -9,9 +9,10 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  // Copy the `img` and `css` folders to the output
+  // Copy the `img`, `css`, and `simpledotcss` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy({"node_modules/simpledotcss/simple.min.css": "css/simple.min.css"});
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
