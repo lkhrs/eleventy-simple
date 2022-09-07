@@ -1,26 +1,17 @@
 # eleventy-simple - WIP
 
-A blog starter using [11ty](https://github.com/11ty/eleventy) and Simple.css. Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
+A blog starter using [11ty](https://github.com/11ty/eleventy) and [Simple.css](https://github.com/kevquirk/simple.css). Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 
 ## Demos
 
 - TBD
-
-## Deploy this to your own site
-
-Deploy this Eleventy site in just a few clicks on these services:
-
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-
-Or, read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/).
 
 ## Getting Started
 
 ### 1. Clone this Repository
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+git clone https://github.com/lkhrs/eleventy-simple.git my-blog-name
 ```
 
 ### 2. Navigate to the directory
