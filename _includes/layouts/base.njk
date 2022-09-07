@@ -30,6 +30,7 @@
     </nav>
 
     <h1>{%- if title %}{{ title }}{%- else %}{{ metadata.title }}{%- endif %}</h1>
+    <p>{% if description %}{{ description }}{% endif %}</p>
   </header>
 
   <main>
