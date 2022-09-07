@@ -1,6 +1,6 @@
 ---
-layout: layouts/post.njk
 title: About Me
+layout: layouts/post.njk
 eleventyNavigation:
   key: About Me
   order: 3
