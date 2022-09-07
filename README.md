@@ -2,9 +2,9 @@
 
 A blog starter using [11ty](https://github.com/11ty/eleventy) and [Simple.css](https://github.com/kevquirk/simple.css). Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 
-## Demos
+## Demo
 
-- TBD
+[eleventy-simple.pages.dev](https://eleventy-simple.pages.dev)
 
 ## Getting Started
 
