@@ -1,4 +1,4 @@
-# eleventy-simple - WIP
+# eleventy-simple
 
 A blog starter using [11ty](https://github.com/11ty/eleventy) and [Simple.css](https://github.com/kevquirk/simple.css). Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 
@@ -53,6 +53,11 @@ Or in debug mode:
 ```
 DEBUG=* npx @11ty/eleventy
 ```
+
+## Documentation
+
+- [Eleventy](https://www.11ty.dev/docs/)
+- [Simple.css](https://github.com/kevquirk/simple.css/wiki)
 
 ### Implementation Notes
 
