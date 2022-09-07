@@ -23,7 +23,7 @@
     <nav>
       <ul>
         {%- for entry in collections.all | eleventyNavigation %}
-        <li ><a href="{{ entry.url | url }}">{{
+        <li><a href="{{ entry.url | url }}">{{
             entry.title }}</a></li>
         {%- endfor %}
       </ul>
@@ -35,11 +35,11 @@
   <main>
 
     {{ content | safe }}
-    </main>
+  </main>
 
-    <footer></footer>
+  <footer></footer>
 
-    <!-- Current page: {{ page.url | url }} -->
+  <!-- Current page: {{ page.url | url }} -->
 </body>
 
 </html>
