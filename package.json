@@ -33,6 +33,6 @@
     "luxon": "^3.2.1",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.6",
-    "simpledotcss": "^2.1.1"
+    "simpledotcss": "^2.1.2"
   }
 }
