@@ -16,8 +16,8 @@ importers:
         version: 2.3.7
     devDependencies:
       '@11ty/eleventy':
-        specifier: ^3.1.0
-        version: 3.1.0
+        specifier: ^3.1.1
+        version: 3.1.1
       '@11ty/eleventy-img':
         specifier: ^6.0.4
         version: 6.0.4
@@ -84,8 +84,8 @@ packages:
     resolution: {integrity: sha512-6QE+duqSQ0GY9rENXYb4iPR4AYGdrFpqnmi59tFp9VrleOl0QSh8VlBr2yd6dlhkdtj7904poZW5PvGr9cMiJQ==}
     engines: {node: '>=18'}
 
-  '@11ty/eleventy@3.1.0':
-    resolution: {integrity: sha512-yR8zE+i5GKXTlR4I6Aj8dywI7f2/6uGhJPwgbH4vgh+XcZQ9zba9UMS/1Lyvkbl3UySRSAmlzeYiXi1ypV6oZg==}
+  '@11ty/eleventy@3.1.1':
+    resolution: {integrity: sha512-nsMCW44WSYzpi6JSQ1ar/wlotj/2cxuP4AABX5Dxqwol3IQ3SkEMgcAugP1t1mthv5I0kIB9lql1Jv/lhUHIkg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -231,8 +231,8 @@ packages:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
     engines: {node: '>=0.4.0'}
 
-  acorn@8.14.1:
-    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -395,6 +395,10 @@ packages:
 
   entities@6.0.0:
     resolution: {integrity: sha512-aKstq2TDOndCn4diEyp9Uq/Flu2i1GlLkc6XIDQSDMuaFE3OPW5OphLCyQ5SpSJZTb4reN+kTcYru5yIfXoRPw==}
+    engines: {node: '>=0.12'}
+
+  entities@6.0.1:
+    resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
     engines: {node: '>=0.12'}
 
   errno@1.0.0:
@@ -764,6 +768,10 @@ packages:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
 
+  statuses@2.0.2:
+    resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
+    engines: {node: '>= 0.8'}
+
   strip-bom-string@1.0.0:
     resolution: {integrity: sha512-uCC2VHvQRYu+lMh4My/sFNmF2klFymLX1wHJeXnbEJERpV/ZsVuonzerjfrGpIGF7LBVa1O7i9kjiWvJiFck8g==}
     engines: {node: '>=0.10.0'}
@@ -824,7 +832,7 @@ snapshots:
   '@11ty/dependency-tree-esm@2.0.0':
     dependencies:
       '@11ty/eleventy-utils': 2.0.7
-      acorn: 8.14.1
+      acorn: 8.15.0
       dependency-graph: 1.0.0
       normalize-path: 3.0.0
 
@@ -902,7 +910,7 @@ snapshots:
 
   '@11ty/eleventy-utils@2.0.7': {}
 
-  '@11ty/eleventy@3.1.0':
+  '@11ty/eleventy@3.1.1':
     dependencies:
       '@11ty/dependency-tree': 4.0.0
       '@11ty/dependency-tree-esm': 2.0.0
@@ -917,7 +925,7 @@ snapshots:
       chokidar: 3.6.0
       debug: 4.4.1
       dependency-graph: 1.0.0
-      entities: 6.0.0
+      entities: 6.0.1
       filesize: 10.1.6
       gray-matter: 4.0.3
       iso-639-1: 3.1.5
@@ -1055,9 +1063,9 @@ snapshots:
 
   acorn-walk@8.3.4:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
 
-  acorn@8.14.1: {}
+  acorn@8.15.0: {}
 
   anymatch@3.1.3:
     dependencies:
@@ -1202,6 +1210,8 @@ snapshots:
 
   entities@6.0.0: {}
 
+  entities@6.0.1: {}
+
   errno@1.0.0:
     dependencies:
       prr: 1.0.1
@@ -1212,7 +1222,7 @@ snapshots:
 
   esm-import-transformer@3.0.3:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
 
   esprima@4.0.1: {}
 
@@ -1391,7 +1401,7 @@ snapshots:
 
   node-retrieve-globals@6.0.1:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       acorn-walk: 8.3.4
       esm-import-transformer: 3.0.3
 
@@ -1488,7 +1498,7 @@ snapshots:
       ms: 2.1.3
       on-finished: 2.4.1
       range-parser: 1.2.1
-      statuses: 2.0.1
+      statuses: 2.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -1543,6 +1553,8 @@ snapshots:
       minipass: 7.1.2
 
   statuses@2.0.1: {}
+
+  statuses@2.0.2: {}
 
   strip-bom-string@1.0.0: {}
 
