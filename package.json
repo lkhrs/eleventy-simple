@@ -44,7 +44,7 @@
 		"luxon": "^3.6.1",
 		"prismjs": "^1.30.0",
 		"zod": "^3.25.67",
-		"zod-validation-error": "^3.4.1"
+		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
 		"@zachleat/heading-anchors": "^1.0.3",
