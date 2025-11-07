@@ -1,0 +1,107 @@
+/*
+Student-safe stylesheet for club-starter-template
+
+Guidelines (read before editing):
+- ONLY edit or add rules prefixed with `.student-` or adjust the CSS custom properties (variables) in the :root section below.
+- Avoid changing element selectors (html, body, h1, p, a, etc.) or existing class names used by the template.
+- Prefer overriding variables rather than changing core styles.
+- Add additional classes that begin with `student-` to keep your styles isolated.
+
+What this file provides:
+- A small set of CSS variables you can tweak safely.
+- A few namespaced utility components (banner, card, button) you can use in your content.
+- Examples showing how to apply color, spacing, and typography changes.
+
+If you need to make global changes for the whole site, talk to your instructor first — site layout and accessibility are preserved by keeping changes here small and namespaced.
+*/
+
+:root {
+  /* Colors --- change these to adjust your student theme */
+  --student-accent: #0a66c2;           /* primary accent */
+  --student-accent-contrast: #ffffff;  /* text color on accent backgrounds */
+  --student-muted: #6b7280;            /* muted text */
+  --student-bg: transparent;           /* additional background for student components */
+
+  /* Typography --- prefer fonts that are web-safe or already available */
+  --student-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --student-heading-weight: 600;
+
+  /* Spacing & shape */
+  --student-gap: 0.75rem;
+  --student-radius: 8px;
+}
+
+/* ---------------------------
+   Example namespaced components
+   --------------------------- */
+
+/* Banner — for a short header / announcement */
+.student-banner {
+  display: block;
+  padding: calc(var(--student-gap) * 1.25);
+  margin: 0 0 var(--student-gap) 0;
+  background: linear-gradient(90deg, var(--student-accent), color-mix(in srgb, var(--student-accent) 60%, #000000 40%));
+  color: var(--student-accent-contrast);
+  border-radius: var(--student-radius);
+  font-family: var(--student-font-family);
+}
+
+/* Card — contained content block */
+.student-card {
+  background: var(--student-bg);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: calc(var(--student-gap) * 1.25);
+  border-radius: var(--student-radius);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  margin: 0 0 var(--student-gap) 0;
+  font-family: var(--student-font-family);
+}
+
+.student-card h2,
+.student-card h3 {
+  margin-top: 0;
+  font-weight: var(--student-heading-weight);
+}
+
+/* Button-like link (use as <a class="student-btn"> or <button class="student-btn">) */
+.student-btn {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  background: var(--student-accent);
+  color: var(--student-accent-contrast);
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--student-font-family);
+  font-weight: 600;
+}
+.student-btn:focus,
+.student-btn:hover {
+  opacity: 0.95;
+}
+
+/* Small helper utilities (namespaced) */
+.student-muted { color: var(--student-muted); }
+.student-center { text-align: center; }
+.student-stack > * + * { margin-top: var(--student-gap); }
+
+/* Avoid global resets here. Keep selectors specific and namespaced. */
+
+/* ---------------------------
+   Examples / How-to
+   ---------------------------
+   1) To change the accent color site-wide (safe):
+
+      :root { --student-accent: #c2185b; }
+
+   2) To style a specific page only, wrap page content with a container and scope the variables:
+
+      <main class="student-root" style="--student-accent:#2b9348">
+        <div class="student-card">Hello</div>
+      </main>
+
+   3) To add more utilities, create classes named like `.student-foo`.
+
+   Notes:
+   - If you must target existing template elements, prefer adding an extra wrapper and styling inside that wrapper rather than changing global selectors.
+   - Do not remove or heavily modify the variables used here — other student styles may rely on them.
+*/

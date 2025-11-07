@@ -21,6 +21,8 @@
 		<style>/* This is an arbitrary CSS string added to the bundle */</style>
 		{#- Add the contents of a file to the bundle #}
 		<style>{% include "css/custom.css" %}</style>
+		{#- Student-editable stylesheet: encourage students to edit css/student.css only #}
+		<style>{% include "css/student.css" %}</style>
 		<style>{% include "node_modules/simpledotcss/simple.min.css" %}</style>
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
 		{#- <style>{% getBundle "css" %}</style> #}
