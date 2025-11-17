@@ -40,11 +40,11 @@ importers:
         specifier: ^1.30.0
         version: 1.30.0
       zod:
-        specifier: ^3.25.67
-        version: 3.25.67
+        specifier: ^3.25.76
+        version: 3.25.76
       zod-validation-error:
         specifier: ^3.4.1
-        version: 3.4.1(zod@3.25.67)
+        version: 3.4.1(zod@3.25.76)
 
 packages:
 
@@ -824,8 +824,8 @@ packages:
     peerDependencies:
       zod: ^3.24.4
 
-  zod@3.25.67:
-    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
 snapshots:
 
@@ -1584,8 +1584,8 @@ snapshots:
 
   ws@8.18.2: {}
 
-  zod-validation-error@3.4.1(zod@3.25.67):
+  zod-validation-error@3.4.1(zod@3.25.76):
     dependencies:
-      zod: 3.25.67
+      zod: 3.25.76
 
-  zod@3.25.67: {}
+  zod@3.25.76: {}
