@@ -43,7 +43,7 @@
 		"cross-env": "^10.1.0",
 		"luxon": "^3.7.2",
 		"prismjs": "^1.30.0",
-		"zod": "^4.3.6",
+		"zod": "^4.4.2",
 		"zod-validation-error": "^5.0.0"
 	},
 	"dependencies": {
